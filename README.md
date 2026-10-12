@@ -32,18 +32,18 @@ Ensure you have [Node.js](https://nodejs.org/) installed on your machine.
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/a00ae/Workify.git
    cd your-repo-name
    ```
 
 2. **Install dependencies:**
    ```bash
-   npm install
+   pnpm install
    ```
 
 3. **Start the development server:**
    ```bash
-   npm run dev
+   pnpm run dev
    ```
 
 4. Open your browser and navigate to `http://localhost:3000` (or the port specified in your terminal).
