@@ -1,78 +1,63 @@
-# React + TypeScript + Vite
+# 🏢 Work & Employee Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, comprehensive management platform designed to help project managers and businesses seamlessly track employee attendance, manage operational expenses (such as food allowances and cash advances), and automate payroll processing.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌟 Key Features
 
-## React Compiler
+- ⏱️ **Attendance & Time Tracking:** Accurate logging of check-ins, check-outs, absences, and late arrivals with automated deduction rules.
+- 🍱 **Meal & Allowance Management:** Track meal costs per employee, categorize them as free or paid, and set spending limits.
+- 💸 **Cash Advances & Loans:** Manage requests, monitor outstanding balances, and set up automated installment deductions from future salaries.
+- 🧮 **Automated Payroll Engine:** Generate detailed pay slips and comprehensive payroll reports with a single click based on attendance, expenses, and advances.
+- 📊 **Analytics Dashboard:** Visual reporting on project labor costs, budget allocation, and document/contract expiry alerts.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend:** React 19, TypeScript, Vite
+- **Styling:** Tailwind CSS
+- **Deployment:** Vercel
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Prerequisites
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Ensure you have [Node.js](https://nodejs.org/) installed on your machine.
 
-```
+### Installation & Setup
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
+   ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
 
-```
+4. Open your browser and navigate to `http://localhost:3000` (or the port specified in your terminal).
+
+---
+
+## 📦 Deployment on Vercel
+
+This project is pre-configured for seamless deployment on **Vercel**:
+1. Push your latest code changes to your GitHub repository.
+2. Import the project into your Vercel Dashboard. Vercel will automatically detect the Vite setup and build the production deployment.
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
