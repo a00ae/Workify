@@ -1,11 +1,13 @@
-import './App.css'
+import './App.css';
+import Header from '@/components/layout/Header/Header';
 
 function App() {
 
 
   return (
     <>
-     <h1 className='text-red-900 font-bold'>Hello, World!</h1> 
+    <Header/>
+    
     </>
   )
 }
