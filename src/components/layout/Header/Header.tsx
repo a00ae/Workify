@@ -28,18 +28,30 @@ const Header = () => {
         }} className="therd w-[60%] h-2 bg-orange-200 flex justify-end items-end ml-auto"></div>
       </div>
       {/* Pages - Link */}
-      <ul className="header_pages flex justify-center items-center gap-10">
+      <ul className="header_pages flex justify-center items-center gap-10 font-medium text-lg capitalize bg-slate-950 !px-8 !py-2 rounded-4xl shadow-xs ">
         <li>
-          <a href="#"></a>
+          <a href="#">product</a>
         </li>
         <li>
-          <a href="#"></a>
+          <a href="#">pricing</a>
         </li>
         <li>
-          <a href="#"></a>
+          <a href="#">services</a>
         </li>
+        <li>
+          <a href="#">privacy policy</a>
+        </li>
+        {/* <li>
+          <a href="#">Contact us</a>
+        </li> */}
       </ul>
-      <div className="header_btn"></div>
+      <div className="header_btn flex gap-3 text-lg font-medium">
+        <button>sgin in</button>
+        <button>Contact</button>
+
+
+      
+      </div>
     </header>
   );
 };
