@@ -1,4 +1,5 @@
 import { memo } from "react";
+import {RiMenu3Line  } from "@remixicon/react";
 
 // Title:   Top header element
 /*
@@ -9,26 +10,9 @@ import { memo } from "react";
 
 */
 
-const Header = () => {
+const List = () => {
   return (
-    <header className="header flex justify-between items-center !px-4 !py-4">
-      {" "}
-      {/* Icons */}
-      <div
-        style={{ boxShadow: "0 0 4px inset rgba(0 0 0 / 20%)" }}
-        className="header_icon bg-orange-800 flex flex-col items-end gap-0.5 cursor-pointer  !p-2 inset-shadow-2xs rounded-lg">
-        <div
-          style={{ borderRadius: "0 3px 0 5px" }}
-          className="first w-[25px] h-[7px] bg-orange-200"></div>
-        <div
-          style={{ borderRadius: "5px 0 3px 0" }}
-          className="scend w-[25px] h-[7px] bg-orange-200"></div>
-        <div style={{
-          borderRadius: "0 4px 0 4px"
-        }} className="therd w-[60%] h-[7px] bg-orange-200 flex justify-end items-end ml-auto"></div>
-      </div>
-      {/* Pages - Link */}
-      <ul className="header_pages flex justify-center items-center gap-10 font-medium text-lg capitalize bg-slate-950 !px-8 !py-2 rounded-4xl shadow-xs ">
+    <ul className="header_pages hidden   lg:flex justify-center items-center gap-10 font-medium text-lg capitalize bg-slate-950 !px-8 !py-2 rounded-4xl shadow-(--shadow-white) ">
         <li>
           <a href="#">product</a>
         </li>
@@ -45,13 +29,42 @@ const Header = () => {
           <a href="#">Contact us</a>
         </li> */}
       </ul>
-      <div className="header_btn flex gap-3 text-lg font-medium">
-        <button>sgin in</button>
-        <button>Contact</button>
+  )
+}
+
+const Header = () => {
+
+  return (
+    <header className="header flex justify-between gap-5 items-center !px-4 !py-4">
+      {" "}
+      {/* Icons */}
+      <div
+        style={{ boxShadow: "0 0 4px inset rgba(0 0 0 / 20%)" }}
+        className="header_icon bg-orange-800 flex flex-col items-end gap-0.5 cursor-pointer  !p-2 inset-shadow-2xs rounded-lg">
+        <div
+          style={{ borderRadius: "0 3px 0 5px" }}
+          className="first w-[25px] h-[7px] bg-orange-200"></div>
+        <div
+          style={{ borderRadius: "5px 0 3px 0" }}
+          className="scend w-[25px] h-[7px] bg-orange-200"></div>
+        <div style={{
+          borderRadius: "0 4px 0 4px"
+        }} className="therd w-[60%] h-[7px] bg-orange-200 flex justify-end items-end ml-auto"></div>
+      </div>
+      {/* Pages - Link */}
+      <List />
+      
+      <div className="header_btn flex items-center gap-3 text-lg font-medium">
+        <button>Sgin in</button>
+        <button className="bg-orange-800 !px-2 !py-1 rounded-md shadow-(--shadow-white)">Contact</button>
 
 
       
+      <div   className="menu lg:hidden !p-2 bg-slate-950 rounded-md shadow-(--shadow-white) cursor-pointer">
+       <RiMenu3Line />
       </div>
+      </div>
+
     </header>
   );
 };
