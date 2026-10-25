@@ -19,13 +19,13 @@ const Header = () => {
         className="header_icon bg-orange-800 flex flex-col items-end gap-0.5 cursor-pointer  !p-2 inset-shadow-2xs rounded-lg">
         <div
           style={{ borderRadius: "0 3px 0 5px" }}
-          className="first w-[30px] h-2 bg-orange-200"></div>
+          className="first w-[25px] h-[7px] bg-orange-200"></div>
         <div
           style={{ borderRadius: "5px 0 3px 0" }}
-          className="scend w-[30px] h-2 bg-orange-200"></div>
+          className="scend w-[25px] h-[7px] bg-orange-200"></div>
         <div style={{
           borderRadius: "0 4px 0 4px"
-        }} className="therd w-[60%] h-2 bg-orange-200 flex justify-end items-end ml-auto"></div>
+        }} className="therd w-[60%] h-[7px] bg-orange-200 flex justify-end items-end ml-auto"></div>
       </div>
       {/* Pages - Link */}
       <ul className="header_pages flex justify-center items-center gap-10 font-medium text-lg capitalize bg-slate-950 !px-8 !py-2 rounded-4xl shadow-xs ">
