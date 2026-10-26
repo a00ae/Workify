@@ -18,7 +18,6 @@ const List = ({
   className?: string;
   child?: string;
 }) => {
-  
   return (
     <ul className={`flex gap-20  font-medium text-md capitalize ${className}`}>
       <li className="w-full">
@@ -99,8 +98,7 @@ const Header = () => {
           {/* نفس مكون List يُعاد استخدامه هنا ولكن بترتيب Column للموبايل */}
           <List
             className="flex-col  justify-start items-center !gap-1 text-white  w-full"
-            child="block w-full text-center !py-4 hover:bg-(--hover) transition-(--transition-normall) "
-          />
+child="block w-full text-center !py-4 hover:bg-[var(--hover)] active:opacity-80 transition-all duration-200"          />
           {/* </div> */}
         </div>
       </div>
