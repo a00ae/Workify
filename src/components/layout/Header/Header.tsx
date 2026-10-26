@@ -18,24 +18,25 @@ const List = ({
   className?: string;
   child?: string;
 }) => {
+  
   return (
-    <ul className={`flex  font-medium text-md capitalize ${className}`}>
-      <li className="sm:w-full">
+    <ul className={`flex gap-20  font-medium text-md capitalize ${className}`}>
+      <li className="w-full">
         <a className={child} href="#">
           product
         </a>
       </li>
-      <li className="sm:w-full">
+      <li className="w-full">
         <a className={child} href="#">
           pricing
         </a>
       </li>
-      <li className="sm:w-full">
+      <li className="w-full">
         <a className={child} href="#">
           services
         </a>
       </li>
-      <li className="sm:w-full">
+      <li className="w-full">
         <a className={child} href="#">
           privacy
         </a>
@@ -53,7 +54,7 @@ const Header = () => {
   return (
     <header
       ref={menuRef}
-      className="header relative flex justify-between gap-5 items-center flex-wrap !px-2 !py-1  lg:!px-8 lg:!py-4">
+      className="header relative flex justify-between gap-2 items-center flex-wrap !px-2 !py-2  lg:!px-8 lg:!py-4">
       {" "}
       {/* Icons / Logo */}
       <div
@@ -72,7 +73,7 @@ const Header = () => {
           className="therd w-[60%] h-1.75 bg-orange-200 flex justify-end items-end ml-auto"></div>
       </div>
       {/* 1. قائمة الشاشات الكبيرة (تظهر كـ Row) */}
-      <div className="hidden lg:block bg-slate-950 !px-8 !py-2 rounded-4xl shadow-(--shadow-white)">
+      <div className="hidden lg:block bg-slate-950 !px-10 !py-3 rounded-4xl shadow-(--shadow-white)">
         <List className="justify-center items-center text-white gap-10" />
       </div>
       <div className="header_btn flex items-center gap-3 text-md font-medium">
@@ -97,8 +98,8 @@ const Header = () => {
         <div className="py-4 bg-slate-950 rounded-md overflow-hidden  mt-2 flex flex-col items-center shadow-(--shadow-white)">
           {/* نفس مكون List يُعاد استخدامه هنا ولكن بترتيب Column للموبايل */}
           <List
-            child="block w-full text-center !py-4 transition-(--transition-normall) hover:bg-(--hover)"
-            className="flex-col justify-start items-center gap-1 text-white  w-full"
+            className="flex-col  justify-start items-center !gap-1 text-white  w-full"
+            child="block w-full text-center !py-4 hover:bg-(--hover) transition-(--transition-normall) "
           />
           {/* </div> */}
         </div>
