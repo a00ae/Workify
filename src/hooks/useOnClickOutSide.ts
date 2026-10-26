@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect} from "react";
 
 type OutSide = {
   ref: React.RefObject<HTMLDivElement | null>;
