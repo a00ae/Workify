@@ -51,7 +51,9 @@ const Header = () => {
   useOnClickOutSide({ ref: menuRef, setOpen: setIsOpen, visible: isOpen });
 
   return (
-    <header className="header relative flex justify-between gap-5 items-center flex-wrap !px-2 !py-1  lg:!px-8 lg:!py-4">
+    <header
+      ref={menuRef}
+      className="header relative flex justify-between gap-5 items-center flex-wrap !px-2 !py-1  lg:!px-8 lg:!py-4">
       {" "}
       {/* Icons / Logo */}
       <div
@@ -88,7 +90,6 @@ const Header = () => {
       </div>
       {/* 2. قائمة الموبايل المنسدلة مع الـ Transition */}
       <div
-        ref={menuRef}
         className={`w-full grid transition-all duration-500 ease-in-out lg:hidden ${
           isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
         }`}>
