@@ -7,6 +7,7 @@
 :root {
   --text: #fff9;
   --text-h: #616161;
+  --hover: oklch(27.9% 0.041 260.031);
   --bg: #1a1a1a;
   --border: #e5e4e7;
   --code-bg: #f4f3ec;
@@ -40,6 +41,9 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Transition */
+  --transition-normall: 0.3s ;
 
   @media (max-width: 1024px) {
     font-size: 16px;
@@ -88,6 +92,9 @@ body {
   width: inherit;
 }
 
+button {
+  cursor: pointer;
+}
 
 
 
