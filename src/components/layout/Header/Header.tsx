@@ -1,6 +1,7 @@
 import { memo, useRef, useState } from "react";
 import { RiMenu3Line } from "@remixicon/react";
 import { useOnClickOutSide } from "@/hooks/useOnClickOutSide";
+import { Link } from "react-router-dom";
 
 // Title:   Top header element
 /*
@@ -76,7 +77,8 @@ const Header = () => {
         <List className="justify-center items-center text-white gap-10" />
       </div>
       <div className="header_btn flex items-center gap-3 text-md font-medium">
-        <button>Sign in</button>
+        {/* <button>Sign in</button> */}
+        <Link to="/login">Sign in</Link>
         <button className="bg-orange-800 !px-2 !py-1 rounded-md shadow-(--shadow-white)">
           Contact
         </button>
