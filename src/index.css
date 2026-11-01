@@ -5,7 +5,8 @@
   --text-h: #616161;
   --hover: oklch(27.9% 0.041 260.031);
   --bg: #1a1a1a;
-  --bg-linear: linear-gradient(to right, #61616100 0%, #a1a1a159 89%, #fff 100%);
+  --bg-linear-right: linear-gradient(to right, #61616100 0%, #a1a1a159 89%, #fff 100%);
+  --bg-linear-left: linear-gradient(to left, #61616100 0%, #a1a1a159 89%, #fff 100%);
   --border: #e5e4e7;
   --code-bg: #f4f3ec;
   --shadow:
@@ -15,7 +16,7 @@
   --shadow-login-white2:
     0 0 1px inset rgb(255 255 255 / 35%), 0 0 5px inset rgba(244 244 244 / 0.1),
     0 1px 0px inset rgb(255 255 255 / 13%);
-  --shadow-arow: -5px 0 1px inset rgb(255 255 255 / 5%);
+  --shadow-arrow: -5px 0 1px inset rgb(255 255 255 / 5%);
   --shadow-circle: 0 0 1px inset rgb(255 255 255 / 45%);;
 
   --sans: system-ui, "Segoe UI", Roboto, sans-serif;
