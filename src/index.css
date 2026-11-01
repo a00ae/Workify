@@ -1,19 +1,22 @@
-
 @import "tailwindcss";
-
-
-
 
 :root {
   --text: #fff9;
   --text-h: #616161;
   --hover: oklch(27.9% 0.041 260.031);
   --bg: #1a1a1a;
+  --bg-linear: linear-gradient(to right, #61616100 0%, #a1a1a159 89%, #fff 100%);
   --border: #e5e4e7;
   --code-bg: #f4f3ec;
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
   --shadow-white: 0 0 2px 0 rgba(255 246 246 / 10%);
+  --shadow-login-white: 0 0 2px 0 rgba(255, 255, 255, 0.281);
+  --shadow-login-white2:
+    0 0 1px inset rgb(255 255 255 / 35%), 0 0 5px inset rgba(244 244 244 / 0.1),
+    0 1px 0px inset rgb(255 255 255 / 13%);
+  --shadow-arow: -5px 0 1px inset rgb(255 255 255 / 5%);
+  --shadow-circle: 0 0 1px inset rgb(255 255 255 / 45%);;
 
   --sans: system-ui, "Segoe UI", Roboto, sans-serif;
   --heading: system-ui, "Segoe UI", Roboto, sans-serif;
@@ -21,7 +24,7 @@
 
   /* ^: space */
 
-    --space-xxl: 100px;
+  --space-xxl: 100px;
   --space-xl: 80px;
   --space-lg: 60px;
   --space-md: 40px;
@@ -30,7 +33,6 @@
   --space-xxs: 5px;
   --space-xxxs: 2px;
   --space-xxxxs: 1px;
-
 
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
@@ -43,7 +45,7 @@
   -moz-osx-font-smoothing: grayscale;
 
   /* Transition */
-  --transition-normall: 0.3s ;
+  --transition-normall: 0.3s;
 
   @media (max-width: 1024px) {
     font-size: 16px;
@@ -64,17 +66,13 @@
     --shadow:
       rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
   }
-
 }
-
-
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
 
 html {
   scroll-behavior: smooth;
@@ -95,12 +93,3 @@ body {
 button {
   cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
