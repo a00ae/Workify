@@ -100,6 +100,18 @@ button {
 }
 
 
+/* Login */
+
+.login_conatiner {
+  max-width: 1200px;
+  margin: auto;
+  .card {
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
