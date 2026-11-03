@@ -5,6 +5,7 @@
   --text-h: #616161;
   --hover: oklch(27.9% 0.041 260.031);
   --bg: #1a1a1a;
+  --bg-login-comp:#1e1e20 ;
   --bg-linear-right: linear-gradient(to right, #61616100 0%, #a1a1a159 89%, #fff 100%);
   --bg-linear-left: linear-gradient(to left, #61616100 0%, #a1a1a159 89%, #fff 100%);
   --border: #e5e4e7;
@@ -18,7 +19,10 @@
     0 1px 0px inset rgb(255 255 255 / 13%);
   --shadow-arrow: -5px 0 1px inset rgb(255 255 255 / 5%);
   --shadow-circle: 0 0 1px inset rgb(255 255 255 / 45%);;
-
+  --shadow-start: 0 0 2px 0 rgb(255 255 255 / 42%);
+  --shadow-start-span: 0 0 4px 0 rgb(255 255 255);
+  --shadow-login-card: 0 2px 1px inset var(--border);
+  --shadow-login-card-circle: 0 1px 0 inset var(--border), 0 1px 0 0 var(--border), 0 0 25px inset var(--border);
   --sans: system-ui, "Segoe UI", Roboto, sans-serif;
   --heading: system-ui, "Segoe UI", Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
@@ -93,4 +97,15 @@ body {
 
 button {
   cursor: pointer;
+}
+
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.login-loading {
+  animation: spin 1.2s linear infinite;
 }
