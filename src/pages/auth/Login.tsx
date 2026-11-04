@@ -1,6 +1,6 @@
 import Button from "@/components/ui/Button";
 import Input from "@/components/ui/Input";
-import { RiLockLine, RiMailLine } from "@remixicon/react";
+import { RiAppleFill, RiGithubFill, RiGoogleFill, RiLockLine, RiMailLine } from "@remixicon/react";
 
 const Login = () => {
   return (
@@ -241,9 +241,8 @@ const Login = () => {
 
         <div
           style={{ width: 340 }}
-          className=" card absolute flex flex-col gap-2  top-1/2 left-1/2   w-2xs  bg-(--bg-login-comp) shadow-(--shadow-login-card) rounded-lg !p-2">
-
-            {/* Top Icons */}
+          className=" card absolute flex flex-col gap-2  top-1/2 left-1/2   w-2xs  bg-(--bg-login-comp) shadow-(--shadow-login-card) rounded-lg !p-5">
+          {/* Top Icons */}
           <div className="top w-full flex justify-center gap-1 relative">
             {/* circle */}
 
@@ -312,7 +311,7 @@ const Login = () => {
               </svg>
             </div>
 
-                        <div className="perint-circle-right flex flex-col gap-0.5 justify-center w-14">
+            <div className="perint-circle-right flex flex-col gap-0.5 justify-center w-14">
               {Array.from({ length: 3 }).map((_, i) => (
                 <div
                   key={i}
@@ -331,19 +330,49 @@ const Login = () => {
           </div>
 
           {/* Heading + Tile */}
-              <div className="box-title w-full  flex flex-col items-center gap-1 text-[14px]">
-                <h3 className="text-lg font-normal">Wolcome Back</h3>
-              <span className="inline-block  text-[#757575]">Don't have an account yet? <span className="text-(--text-h)">Sign up</span></span>
+          <div className="box-title w-full  flex flex-col items-center gap-1 text-[14px]">
+            <h3 className="text-lg font-normal">Wolcome Back</h3>
+            <span className="inline-block  text-[#757575]">
+              Don't have an account yet?{" "}
+              <span className="text-(--text-h)">Sign up</span>
+            </span>
+          </div>
 
-              </div>
+          {/* Forom + Login */}
+          <form className="form w-full flex flex-col gap-3 justify-center items-center !pt-3">
+            <Input
+              className="!p-2 w-full  flex gap-1 items-center bg-(--bg-login) rounded-md"
+              icons={<RiMailLine size={18} color="#858486" />}
+              textPlaceholder="email address"
+            />
+            <Input
+              className="!p-2 w-full  flex gap-1 items-center bg-(--bg-login) rounded-md"
+              icons={<RiLockLine size={18} color="#858486" />}
+              textPlaceholder="password"
+            />
+            {/* Login Button */}
+            <Button
+              text="Login"
+              className="w-full !p-1 bg-orange-800 rounded-sm text-sm"
+            />
+            {/* Or */}
+            <div className="flex items-center gap-3 my-6 w-full">
+              <div className="flex-1 h-[1px] bg-neutral-700"></div>
 
-            {/* Forom + Login */}
-            <form className="form w-full flex flex-col gap-3 justify-center items-center !pt-3">
-              <Input icons={<RiMailLine size={18} color="#858486"/>} textPlaceholder="email address"/>
-              <Input icons={<RiLockLine  size={18} color="#858486"/>} textPlaceholder="password"/>
-              <Button text="Login"/>
-            </form>
+              <span className="px-4 text-neutral-400 text-sm font-medium">
+                OR
+              </span>
 
+              <div className="flex-1 h-[1px] bg-neutral-700"></div>
+            </div>
+
+            <div className="w-full flex justify-center items-center gap-2 ">
+              <Button text={<RiAppleFill  size={18}/>} className="flex-1 flex justify-center bg-[#363434] !py-2 rounded-md shadow-(--shadow-login-social)"/>
+              <Button text={<RiGoogleFill  size={18}/>} className="flex-1 flex justify-center bg-[#363434] !py-2 rounded-md shadow-(--shadow-login-social)"/>
+              <Button text={<RiGithubFill size={18}/>} className="flex-1 flex justify-center bg-[#363434] !py-2 rounded-md shadow-(--shadow-login-social)"/>
+
+            </div>
+          </form>
         </div>
       </div>
     </div>

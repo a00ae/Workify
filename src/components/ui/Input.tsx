@@ -3,11 +3,12 @@ type InputType =
 {
     icons: React.ReactNode;
     textPlaceholder: string;
+    className: string;
 
 }
-const Input = ({icons, textPlaceholder}: InputType) => {
+const Input = ({icons, textPlaceholder, className = ""}: InputType) => {
   return (
-    <div style={{border: "var(--border-style-inputs)"}}  className="!p-2 w-[90%]  flex gap-1 items-center bg-(--bg-login) rounded-md">
+    <div style={{border: "var(--border-style-inputs)"}}  className={className}>
         <div className="icons">
         {icons}
         </div>
