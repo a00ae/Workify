@@ -1,6 +1,6 @@
 import Button from "@/components/ui/Button";
 import Input from "@/components/ui/Input";
-import { RiAppleFill, RiAppleLine, RiGithubFill, RiGithubLine, RiGoogleFill, RiGoogleLine, RiLockLine, RiMailLine } from "@remixicon/react";
+import { RiAppleFill, RiGithubFill, RiGoogleFill, RiLockLine, RiMailLine } from "@remixicon/react";
 
 const Login = () => {
   return (
