@@ -39,6 +39,18 @@
   --space-xxxs: 2px;
   --space-xxxxs: 1px;
 
+  /* font size */
+  --font-size-xxl: 5rem; /* 80px*/
+  --font-size-xl: 2.5rem; /* 40px */
+  --font-size-lg: 1.875rem; /* 30px */
+  --font-size-md: 1.5rem; /* 24px */
+  --font-size-sm: 1.125rem; /* 18px */
+  --font-size-xs: 1rem; /* 16px */ 
+  --font-size-xxs: 0.875rem; /* 14px */
+
+  /* border */
+  --border-style-inputs: 1px solid var(--border);
+
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
   color-scheme: light dark;
@@ -62,6 +74,7 @@
     --text: #e5ebf5;
     --text-h: #f3f4f6;
     --bg: #16171d;
+    --bg-login: #0a0a0c;
     --border: #2e303a;
     --code-bg: #1f2028;
     --accent: #c084fc;
@@ -98,6 +111,12 @@ body {
 button {
   cursor: pointer;
 }
+/* Input */
+input {
+  line-height: 1.6;
+  font-size: calc( var(--font-size-xxs));
+}
+
 
 
 /* Login */

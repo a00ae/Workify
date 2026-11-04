@@ -1,6 +1,10 @@
+import Button from "@/components/ui/Button";
+import Input from "@/components/ui/Input";
+import { RiLockLine, RiMailLine } from "@remixicon/react";
+
 const Login = () => {
   return (
-    <div className="login min-h-screen w-full  overflow-hidden     bg-[#0a0a0c] text-white">
+    <div className="login min-h-screen w-full  overflow-hidden     bg-(--bg-login) text-white">
       <div className="login_conatiner   flex items-center  justify-center">
         <div className="continer h-screen w-[50%]  relative ">
           <div
@@ -236,8 +240,8 @@ const Login = () => {
         </div>
 
         <div
-          style={{ width: 320 }}
-          className=" card absolute flex flex-col gap-2  top-1/2 left-1/2   w-2xs h-72 bg-(--bg-login-comp) shadow-(--shadow-login-card) rounded-lg !p-2">
+          style={{ width: 340 }}
+          className=" card absolute flex flex-col gap-2  top-1/2 left-1/2   w-2xs  bg-(--bg-login-comp) shadow-(--shadow-login-card) rounded-lg !p-2">
 
             {/* Top Icons */}
           <div className="top w-full flex justify-center gap-1 relative">
@@ -327,11 +331,18 @@ const Login = () => {
           </div>
 
           {/* Heading + Tile */}
-              <div className="box-title w-full  flex flex-col items-center gap-1 text-[12px]">
+              <div className="box-title w-full  flex flex-col items-center gap-1 text-[14px]">
                 <h3 className="text-lg font-normal">Wolcome Back</h3>
               <span className="inline-block  text-[#757575]">Don't have an account yet? <span className="text-(--text-h)">Sign up</span></span>
 
               </div>
+
+            {/* Forom + Login */}
+            <form className="form w-full flex flex-col gap-3 justify-center items-center !pt-3">
+              <Input icons={<RiMailLine size={18} color="#858486"/>} textPlaceholder="email address"/>
+              <Input icons={<RiLockLine  size={18} color="#858486"/>} textPlaceholder="password"/>
+              <Button text="Login"/>
+            </form>
 
         </div>
       </div>
