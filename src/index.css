@@ -23,6 +23,7 @@
   --shadow-start-span: 0 0 4px 0 rgb(255 255 255);
   --shadow-login-card: 0 2px 1px inset var(--border);
   --shadow-login-card-circle: 0 1px 0 inset var(--border), 0 1px 0 0 var(--border), 0 0 25px inset var(--border);
+  --shadow-login-social: 0 -1px 0 0 var(--color-mist-600), 0 1px 1px 0 var(--bg-login);
   --sans: system-ui, "Segoe UI", Roboto, sans-serif;
   --heading: system-ui, "Segoe UI", Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;

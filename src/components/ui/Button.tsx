@@ -1,12 +1,13 @@
 
 
 type ButtonType = {
-    text: string;
+    text: string | React.ReactNode;
+    className:string;
 }
 
-const Button = ({text}: ButtonType) => {
+const Button = ({text, className =""}: ButtonType) => {
   return (
-    <button className="w-[90%] !p-1 bg-orange-800 rounded-sm text-sm">{text}</button>
+    <button className={className}>{text}</button>
   )
 }
 
